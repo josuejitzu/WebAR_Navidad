@@ -1,0 +1,23 @@
+html, body, #root {
+    font-family : Roboto, sans-serif;
+    background: #ffffff;
+    color: #1e2432;
+    height: 100%;
+    margin: 30;
+    
+    
+}
+.inicio{
+    text-align: center;
+    display: flex; 
+    justify-content:center; 
+    align-items: center;
+   
+    flex-direction: column;
+    
+}
+
+@font-face{
+    font-family:Roboto;
+    src: url(./Source/Roboto/Roboto-Medium.ttf);
+}
