@@ -44,6 +44,7 @@ function darClick() {
     }else if(esAndroid){
         console.debug("Dando click en Android");
        //Comentar esto en Debug porque genera muchas ventanas
+       //Cada documento Index tiene sus links correspondientes
        //document.getElementById("botonAndroid").click();
 
 
