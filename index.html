@@ -15,8 +15,14 @@
         <h1>Bienvenido a Plaza Comercial</h1>
         <p >Para reproduir este contenido <strong>AR</strong> utiliza un Smartphone Android o Iphone</p>
         <a href="./osoAR.html" ><button>OSO AR</button></a>
-        <model-viewer src="./Source/model.glb" ar alt="A 3D model of an astronaut" auto-rotate camera-controls
-        style="height: 300px; width: 300px"></model-viewer>
+        <model-viewer src="./Source/Modelos/model.glb" ar alt="A 3D model of an astronaut" auto-rotate camera-controls
+        style="height: 300px; width: 300px">
+        
+        </model-viewer>
+        <a id="botonAndroid" target="_blank" class="btn btn-lg btn-secondary" 
+        href="intent://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/josuejitzu/WebAR_Navidad/master/Source/model.glb&amp;mode=ar_only&amp;title=OSO #Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">
+            AR OSO
+        </a>
     </div>
 </body>
 </html>
