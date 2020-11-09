@@ -20,8 +20,8 @@
 
     <p></p>
      <!-- https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/model.glb -->
-     <model-viewer camera-controls 
-         
+     <model-viewer id="viewer" 
+         camera-controls 
          ar
          ar-modes="webxr scene-viewer quick-look"
          ar-scale="auto"
@@ -29,8 +29,9 @@
          alt="Oso Regalos"
          src="../../Source/Modelos/oso_regalos_anim3.glb"
          ios-src="../../Source/Modelos/osos_regalos4.usdz"
-         style="height: 1000px; width: 1000px; ">
+         style="height: 300px; width: 300px; ">
         </model-viewer>
+        
      <!-- ./modelos/test_sana_2.usdz -->
     <ul >
         <li>
@@ -51,6 +52,16 @@
     </ul>
     <!-- <model-viewer src="shared-assets/models/Astronaut.glb" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer> -->
 
-    
+    <script>
+        (() => {
+          var checkExist = setInterval(function() {
+           if (document.getElementById("viewer") != null) {
+              modelViewer = document.getElementById("viewer");
+              modelViewer.activateAR();
+              clearInterval(checkExist);
+           }
+        }, 100);
+        })();
+    </script>
 </body>
 </html>

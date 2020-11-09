@@ -4,6 +4,8 @@ window.onload = () => {
 
 }
 
+const modelViewer = document.querySelector("model-viewer");
+
 var esiPhone;
 var esAndroid;
 var esEscritorio;
@@ -31,6 +33,33 @@ function detectarBrowser() {
 }
 
 
+// document.getElementById("viewer").addEventListener('ar-status', (event) => {
+//     // if(event.detail.status === 'failed'){
+//     //   const error = document.querySelector("#error");
+//     //   error.classList.remove('hide');
+//     //   error.addEventListener('transitionend',(event) => {
+//     //     error.classList.add('hide');
+//     //   });
+//     // }
+//     if(event.detail.status == 'session-started')
+//     {
+//          alert("Cargado");
+//     }
+//   });
+
+// (() => {
+//     var checkExist = setInterval(function() {
+//      if (document.querySelector("#viewer-singleton") != null) {
+//         modelViewer = document.querySelector("#viewer-singleton");
+//         modelViewer.activateAR();
+//         clearInterval(checkExist);
+//      }
+//   }, 100);
+//   })();
+
+
+
+
 function darClick() {
 
     console.debug(document.title);
@@ -45,7 +74,8 @@ function darClick() {
         console.debug("Dando click en Android");
        //Comentar esto en Debug porque genera muchas ventanas
        //Cada documento Index tiene sus links correspondientes
-       document.getElementById("botonAndroid").click();
+       //document.getElementById("botonAndroid").click();
+      // document.getElementById("ar-button").click();
        
     }else{
         console.debug("No se puede cargar");
