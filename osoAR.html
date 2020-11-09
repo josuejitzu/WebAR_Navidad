@@ -7,6 +7,8 @@
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     <script type="text/javascript" src="funciones.js"></script>
+    <link href="./index.css" rel="stylesheet">
+
 </head>
 <body>
    
@@ -15,20 +17,31 @@
     href="intent://arvr.google.com/scene-viewer/1.0?file=https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/model.glb&amp;mode=ar_only&amp;title=OSO #Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">
         AR OSO Android
     </a> -->
+
     <p></p>
      <!-- https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/model.glb -->
-     <model-viewer   ar ar-modes="webxr scene-viewer quick-look" autoplay ar-scale="auto"  alt="A 3D model of an astronaut." src="../../Source/Modelos/oso_regalos_anim2.gltf" ios-src="../../Source/Modelos/Oso01.usdz" style="height: 500px;  "></model-viewer>
+     <model-viewer camera-controls 
+         
+         ar
+         ar-modes="webxr scene-viewer quick-look"
+         ar-scale="auto"
+         autoplay
+         alt="Oso Regalos"
+         src="../../Source/Modelos/oso_regalos_anim3.glb"
+         ios-src="../../Source/Modelos/osos_regalos4.usdz"
+         style="height: 1000px; width: 1000px; ">
+        </model-viewer>
      <!-- ./modelos/test_sana_2.usdz -->
     <ul >
         <li>
-            <a id="botonAndroid" target="_blank" 
-            href="intent://arvr.google.com/scene-viewer/1.0?file=https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/oso_regalos_anim.glb&amp;mode=ar_only&amp;title=OSO #Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;end;">
+            <a id="botonAndroid"  
+            href="intent://arvr.google.com/scene-viewer/1.0?file=https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/oso_regalos_anim.glb&amp;mode=ar_only&amp;title=OSO #Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://josuejitzu.github.io/WebAR_Navidad;end;">
                 AR OSO Android
             </a>
         </li>
        
         <li>
-            <a id="botonIos" target="_blank" href="./Source/Modelos/osos_regalos3.usdz">
+            <a id="botonIos" target="_blank" href="./Source/Modelos/osos_regalos4.usdz">
                 AR OSO iOS
             </a>
         </li>
@@ -37,7 +50,7 @@
         </li>
     </ul>
     <!-- <model-viewer src="shared-assets/models/Astronaut.glb" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer> -->
-   
+
     
 </body>
 </html>
