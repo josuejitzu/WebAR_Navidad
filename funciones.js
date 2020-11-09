@@ -4,7 +4,7 @@ window.onload = () => {
 
 }
 
-const modelViewer = document.querySelector("model-viewer");
+//const modelViewer = document.querySelector("model-viewer");
 
 var esiPhone;
 var esAndroid;
