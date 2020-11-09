@@ -1,7 +1,7 @@
 window.onload = () => {
    detectarBrowser();
-   //console.log(isMobile);
-
+   //console.   log(isMobile);
+   
 }
 
 //const modelViewer = document.querySelector("model-viewer");
@@ -33,19 +33,22 @@ function detectarBrowser() {
 }
 
 
-// document.getElementById("viewer").addEventListener('ar-status', (event) => {
-//     // if(event.detail.status === 'failed'){
-//     //   const error = document.querySelector("#error");
-//     //   error.classList.remove('hide');
-//     //   error.addEventListener('transitionend',(event) => {
-//     //     error.classList.add('hide');
-//     //   });
-//     // }
-//     if(event.detail.status == 'session-started')
-//     {
-//          alert("Cargado");
-//     }
-//   });
+
+
+    // document.querySelector("viewer").addEventListener('ar-status', (event) => {
+    //     if(event.detail.status === 'failed'){
+    //     //   const error = document.querySelector("#error");
+    //     //   error.classList.remove('hide');
+    //     //   error.addEventListener('transitionend',(event) => {
+    //     //     error.classList.add('hide');
+    //     //   });
+    //     }
+    //     if(event.detail.status =='session-started')
+    //     {
+    //         console.log("session-started");
+    //     }
+    // });
+
 
 // (() => {
 //     var checkExist = setInterval(function() {

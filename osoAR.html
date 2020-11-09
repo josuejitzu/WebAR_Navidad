@@ -6,6 +6,8 @@
     <title>Navidad AR - Oso Ar</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
     <script type="text/javascript" src="funciones.js"></script>
     <link href="./index.css" rel="stylesheet">
 
@@ -20,17 +22,17 @@
 
     <p></p>
      <!-- https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/model.glb -->
-     <model-viewer id="viewer" 
-         camera-controls 
-         ar
-         ar-modes="webxr scene-viewer quick-look"
-         ar-scale="auto"
-         autoplay
-         alt="Oso Regalos"
-         src="https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/oso_regalos_anim3.glb"
-         ios-src="https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/osos_regalos4.usdz"
-         style="position: relative; left:0; top:0; margin:0; padding:0; width:100%; height:100%;">
-        </model-viewer>
+     <model-viewer src="https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/oso_regalos_anim3.glb"
+                   ios-src="https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/osos_regalos4.usdz"
+                   style="position: relative; left:0; top:0; margin:0; padding:0; width:100%; height:100%;"
+                   camera-controls 
+                   ar
+                   ar-modes="webxr scene-viewer quick-look"
+                   ar-scale="auto"
+                   autoplay
+                   alt="Oso Regalos"
+                   id="viewer" >
+    </model-viewer>
         
      <!-- ./modelos/test_sana_2.usdz -->
     <ul >
