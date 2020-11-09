@@ -55,8 +55,8 @@
     <script>
         (() => {
           var checkExist = setInterval(function() {
-           if (document.getElementById("viewer") != null) {
-              modelViewer = document.getElementById("viewer");
+           if (document.querySelector("#viewer") != null) {
+              modelViewer = document.querySelector("#viewer");
               modelViewer.activateAR();
               clearInterval(checkExist);
            }
