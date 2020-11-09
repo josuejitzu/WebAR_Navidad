@@ -39,17 +39,17 @@ function darClick() {
     {
         console.debug("Dando click en Iphone");
        //Comentar esto en Debug porque genera muchas ventanas
-         document.getElementById("botonIos").click();
+        // document.getElementById("botonIos").click();
 
     }else if(esAndroid){
         console.debug("Dando click en Android");
        //Comentar esto en Debug porque genera muchas ventanas
        //Cada documento Index tiene sus links correspondientes
-      document.getElementById("botonAndroid").click();
+       document.getElementById("botonAndroid").click();
        
     }else{
         console.debug("No se puede cargar");
-
+       // document.getElementById("botonHome").click();
 
     }
 

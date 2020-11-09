@@ -1,7 +1,7 @@
 html, body, #root {
     font-family : Roboto, sans-serif;
-    background: #ffffff;
-    color: #1e2432;
+    background: #c24646;
+    color: #e6eaf1;
     height: 100%;
     margin: 30;
     
@@ -20,4 +20,20 @@ html, body, #root {
 @font-face{
     font-family:Roboto;
     src: url(./Source/Roboto/Roboto-Medium.ttf);
+}
+
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
 }

@@ -9,25 +9,34 @@
     <script type="text/javascript" src="funciones.js"></script>
 </head>
 <body>
+   
+    <!-- Esto si funciona, tratar de simplificar URL -->
     <!-- <a id="botonAndroid" target="_blank" class="btn btn-lg btn-secondary" 
-    href="intent://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/josuejitzu/Santa_AR_testing/master/modelos/santa_claus_02/scene.gltf&amp;mode=ar_only&amp;title=Mi Modelo #Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">
-        AR Android
+    href="intent://arvr.google.com/scene-viewer/1.0?file=https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/model.glb&amp;mode=ar_only&amp;title=OSO #Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">
+        AR OSO Android
     </a> -->
-    <!-- <a id="botonAndroid" target="_blank" 
-    href="intent://arvr.google.com/scene-viewer/1.0?file=https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/model.glb&amp;mode=ar_only&amp;title=OSO #Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://josuejitzu.github.io/WebAR_Navidad;end;">
-        AR OSO
-    </a> -->
-    <a id="botonAndroid" target="_blank" 
-    href="intent://arvr.google.com/scene-viewer/1.0?file=./Source/Modelos/model.glb&amp;mode=ar_only&amp;title=OSO #Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://josuejitzu.github.io/WebAR_Navidad;end;">
-        AR OSO
-    </a>
-    
-    <!-- <model-viewer id="botonAndroid" ar alt="A 3D model of an astronaut." src="https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/model.glb"></model-viewer> -->
-   <!-- ./modelos/test_sana_2.usdz -->
-    <a id="botonIos" target="_blank" class="btn btn-lg btn-secondary" href="./Source/Modelos/Oso01.usdz">
-        AR iOS
-    </a>
-    <model-viewer src="shared-assets/models/Astronaut.glb" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer>
+    <p></p>
+     <!-- https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/model.glb -->
+     <model-viewer   ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto"  alt="A 3D model of an astronaut." src="../../Source/Modelos/model.glb" ios-src="../../Source/Modelos/Oso01.usdz" style="height: 500px;  "></model-viewer>
+     <!-- ./modelos/test_sana_2.usdz -->
+    <ul >
+        <li>
+            <a id="botonAndroid" target="_blank" 
+            href="intent://arvr.google.com/scene-viewer/1.0?file=https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/osoRegalos.glb&amp;mode=ar_only&amp;title=OSO #Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=../index.html;end;">
+                AR OSO Android
+            </a>
+        </li>
+       
+        <li>
+            <a id="botonIos" target="_blank" href="./Source/Modelos/Oso01.usdz">
+                AR OSO iOS
+            </a>
+        </li>
+        <li>
+            <a id="botonHome" href="../../index.html"> No compatible </a>
+        </li>
+    </ul>
+    <!-- <model-viewer src="shared-assets/models/Astronaut.glb" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer> -->
    
     
 </body>
