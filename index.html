@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navidad AR</title>
+    <title>Andares - Navidad AR</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     <script type="text/javascript" src="funciones.js"></script>
@@ -12,18 +12,25 @@
 </head>
 <body>
     <div class="inicio" >
-        <h1>Bienvenido a Plaza Comercial</h1>
-        <p >Para reproduir este contenido <strong>AR</strong> utiliza un Smartphone Android o Iphone</p>
-        <a href="./osoAR.html" class="btn btn-lg btn-secondary"><button class="btn btn-secondary">OSO AR</button></a>
-        <p></p>
-        <model-viewer src="./Source/Modelos/model.glb" ar alt="A 3D model of an astronaut" auto-rotate camera-controls
-        style="height: 300px; width: 300px">
+        <h1>Bienvenido a Andares</h1>
+        <p >Para reproduir este contenido <strong>AR</strong> utiliza un Smartphone <strong>Android</strong> o <strong>iPhone</strong></p>
+        <div class="links">
+            <a href="./osoAR.html" class="btn btn-lg btn-secondary">Oso regalos AR</a>
+            <a href="./cascanuecesAR.html" class="btn btn-lg btn-secondary">Cascanueces AR  </a>
+            <a href="./hombreNieve.html" class="btn btn-lg btn-secondary">Hombre de Nieve AR </a>
+            <a href="./esferas.html" class="btn btn-lg btn-secondary">Esferas AR        </a>
+            <a href="./coposNieve.html" class="btn btn-lg btn-secondary">CoposNieve AR  </a>
+        </div>
+    </div>
+    <p></p>
+        <model-viewer 
+                    src="./Source/Modelos/model.glb" 
+                    ar
+                    alt="A 3D model of an astronaut" 
+                    auto-rotate 
+                    camera-controls
+                    style="position: relative; left:0; top:0; margin:0; padding:0; width:100%; height:70%;">
         
         </model-viewer>
-        <!-- <a id="botonAndroid" target="_blank" class="btn btn-lg btn-secondary" 
-        href="intent://arvr.google.com/scene-viewer/1.0?file=https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/model.glb&amp;mode=ar_only&amp;title=OSO #Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">
-            AR OSO
-        </a> -->
-    </div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 html, body, #root {
     font-family : Roboto, sans-serif;
-    background: #c24646;
+    background: #000000;
     color: #e6eaf1;
     height: 100%;
     margin: 30;
@@ -25,7 +25,8 @@ html, body, #root {
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 /* Custom default button */
@@ -36,4 +37,27 @@ a:hover {
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
   border: .05rem solid #fff;
+}
+
+
+.links{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  /* flex-direction:column; */
+  flex-wrap: wrap;
+
+}
+
+a{
+  background-color: #ffffff;
+  border-radius:30px; 
+  padding:10px; 
+  margin:10px;
+  text-emphasis: none;
+}
+
+.botonAndroid
+{
+  text-align:center;
 }

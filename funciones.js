@@ -1,10 +1,10 @@
 window.onload = () => {
    detectarBrowser();
-   //console.   log(isMobile);
+   
    
 }
 
-//const modelViewer = document.querySelector("model-viewer");
+
 
 var esiPhone;
 var esAndroid;
@@ -31,34 +31,6 @@ function detectarBrowser() {
     }
     darClick();
 }
-
-
-
-
-    // document.querySelector("viewer").addEventListener('ar-status', (event) => {
-    //     if(event.detail.status === 'failed'){
-    //     //   const error = document.querySelector("#error");
-    //     //   error.classList.remove('hide');
-    //     //   error.addEventListener('transitionend',(event) => {
-    //     //     error.classList.add('hide');
-    //     //   });
-    //     }
-    //     if(event.detail.status =='session-started')
-    //     {
-    //         console.log("session-started");
-    //     }
-    // });
-
-
-// (() => {
-//     var checkExist = setInterval(function() {
-//      if (document.querySelector("#viewer-singleton") != null) {
-//         modelViewer = document.querySelector("#viewer-singleton");
-//         modelViewer.activateAR();
-//         clearInterval(checkExist);
-//      }
-//   }, 100);
-//   })();
 
 
 
@@ -90,21 +62,3 @@ function darClick() {
 
 
 
-// var isMobile = 
-// {
-//     Windows: function() {
-//         return /IEMobile/i.test(navigator.userAgent);
-//     },
-//     Android: function() {
-//         return /Android/i.test(navigator.userAgent);
-//     },
-//     BlackBerry: function() {
-//         return /BlackBerry/i.test(navigator.userAgent);
-//     },
-//     iOS: function() {
-//         return /iPhone|iPad|iPod/i.test(navigator.userAgent);
-//     },
-//     any: function() {
-//         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
-//     }
-// };

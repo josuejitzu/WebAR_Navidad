@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andares-Navidad AR-Nieve AR</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+    <script type="text/javascript" src="funciones.js"></script>
+    <link href="./index.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="inicio" >
+        <h1>Bienvenido a Andares</h1>
+        <p >Para reproduir este contenido <strong>AR</strong> utiliza un Smartphone <strong>Android</strong> o <strong>iPhone</strong></p>
+    </div>
+    <p></p>
+    <div class="links" >
+      
+        <a id="botonAndroid" 
+            target="_blank"
+            href="intent://arvr.google.com/scene-viewer/1.0?file=https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/oso_regalos_anim3.glb&amp;mode=ar_only&amp;title=OSO #Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://josuejitzu.github.io/WebAR_Navidad;end;">
+            AR  <img src="./Source/Imagenes/android.png" style="width:20px; "/>
+        </a>
+    
+        <a id="botonIos" target="_blank" href="./Source/Modelos/osos_regalos4.usdz">
+            AR <img src="./Source/Imagenes/apple.png" style="height: 20px; "/>
+        </a>
+    
+        <a id="botonHome" href="../../index.html"> No compatible </a>
+   
+    </div>
+
+
+    <p></p>
+   
+    
+     <model-viewer src="../../Source/Modelos/osoCopoNieve.glb"
+                   ios-src="../../Source/Modelos/ososCoposNieves.usdz"
+                   style="position: relative; left:0; top:0; margin:0; padding:0; width:100%; height:70%;"
+                   camera-controls 
+                   ar
+                   ar-modes="webxr scene-viewer quick-look"
+                   ar-scale="auto"
+                   autoplay
+                   alt="Oso Regalos"
+                   id="viewer" >
+    </model-viewer>
+         
+
+    <script>
+        (() => {
+          var checkExist = setInterval(function() {
+           if (document.querySelector("#viewer") != null) {
+              modelViewer = document.querySelector("#viewer");
+              modelViewer.activateAR();
+              console.log("Se debio activar AR");
+              clearInterval(checkExist);
+           }
+        }, 100);
+        })();
+    </script>
+    
+</body>
+</html>
