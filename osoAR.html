@@ -8,8 +8,12 @@
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
     <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
-    <link rel="icon" type="image/png" sizes="32x32" href="./Source/Imagenes/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./Source/Imagenes/favicon-32x32.png"> 
+    
+    <link rel="shortcut icon" type="image/png" href="./Source/Imagenes/favicon-32x32.png"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Source/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Source/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <script type="text/javascript" src="funciones.js"></script>
     <link href="./index.css" rel="stylesheet">
 
@@ -30,11 +34,11 @@
       
         <a id="botonAndroid" 
             target="_blank"
-            href="intent://arvr.google.com/scene-viewer/1.0?file=https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/oso_regalos_anim3.glb&amp;mode=ar_only&amp;title=OSO #Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://josuejitzu.github.io/WebAR_Navidad;end;">
+            href="intent://arvr.google.com/scene-viewer/1.0?file=https://navidadesandares.mx/Source/Modelos/oso_regalos_anim3.glb&amp;mode=ar_only&amp;title=Oso regalos #Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://josuejitzu.github.io/WebAR_Navidad;end;">
             AR <img src="./Source/Imagenes/android.png" style="width:20px; "/>
         </a>
     
-        <a id="botonIos" target="_blank" href="./Source/Modelos/osos_regalos4.usdz">
+        <a id="botonIos" target="_blank" href="./Source/Modelos/osoRegalos.usdz">
             AR <img src="./Source/Imagenes/apple.png" style="height: 20px; "/>
         </a>
     
@@ -45,7 +49,7 @@
    
      <!-- https://josuejitzu.github.io/WebAR_Navidad/Source/Modelos/model.glb -->
      <model-viewer src="./Source/Modelos/oso_regalos_anim3.glb"
-                   ios-src="./Source/Modelos/osos_regalos4.usdz"
+                   ios-src="./Source/Modelos/osoRegalos.usdz"
                    style="position: relative; left:0; top:0; margin:0; padding:0; width:100%; height:70%;"
                    camera-controls 
                    ar
