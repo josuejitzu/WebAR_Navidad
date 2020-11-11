@@ -1,6 +1,13 @@
 window.onload = () => {
    detectarBrowser();
    
+
+   var botonHome = document.getElementById("botonHome");
+   if(botonHome)
+   {
+       //botonHome.parentNode.removeChild(botonHome);//remover boton en release
+
+   }
    
 }
 
